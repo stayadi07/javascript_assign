@@ -1,13 +1,27 @@
 <html>
-    <head>
-        <title>Todo List</title>
-    </head>
-    <body>
-        <div>
-            <input type='text' name='todo_input'>
-            <button type='submit'>Add Todo</button>
-            <div class='todos'></div>
-        </div>
-    </body>
-    <script src='./script.js'></script>
+
+<head>
+    <title>Todo List</title>
+</head>
+
+<body bgcolor="aliceblue" style="border: 1px solid cadetblue;">
+    <div style="text-align: center;">
+        <label style="font-size: 25px; color:hwb(219 36% 28%);" for="todo">Select Completed or pending:</label>
+        <select name="todo" id="todo" style='width: 100px;
+        font-size: 15px;
+        color: black;
+        background: darkgray;
+        margin: 20px 0px;''>
+            <option value="None"></option>
+            <option value="Completed">Completed</option>
+            <option value="pending">pending</option>
+        </select>
+    </div>
+    <div id="container" style="
+    margin-left: 10px;
+"></div>
+
+</body>
+<script src='./script.js'></script>
+
 </html>
